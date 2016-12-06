@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chaitanyaannam.animation.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/ddd"
+        android:id="@+id/ivSkull"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <Button
+        android:text="Rotate"
+        android:layout_width="wrap_content"
+        android:onClick="clockwise"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivSkull"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="273dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/btnRotate" />
+
+    <Button
+        android:text="blink"
+        android:layout_width="wrap_content"
+        android:onClick="blink"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnRotate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="98dp"
+        android:layout_marginStart="98dp"
+        android:id="@+id/btnZoomin" />
+
+    <Button
+        android:text="move"
+        android:layout_width="wrap_content"
+        android:onClick="move"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnZoomin"
+        android:layout_toRightOf="@+id/btnZoomin"
+        android:layout_toEndOf="@+id/btnZoomin"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:id="@+id/btnZoomout" />
+
+    <Button
+        android:text="slide"
+        android:layout_width="wrap_content"
+        android:onClick="slide"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnFadein"
+        android:layout_toRightOf="@+id/btnZoomin"
+        android:layout_toEndOf="@+id/btnZoomin"
+        android:id="@+id/btnFadeout" />
+
+    <Button
+        android:text="FadeIn"
+        android:layout_width="wrap_content"
+        android:onClick="fade"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFadein"
+        android:layout_below="@+id/btnRotate"
+        android:layout_toLeftOf="@+id/btnFadeout"
+        android:layout_toStartOf="@+id/btnFadeout"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+</RelativeLayout>
